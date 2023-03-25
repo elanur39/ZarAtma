@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZarAtma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Vit-Bb-D1f">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="b7S-wq-maX">
+                                <rect key="frame" x="107" y="78" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Rm3-1l-m9v"/>
+                                    <constraint firstAttribute="height" constant="200" id="fuo-dF-V4v"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="SHT-zr-w5S">
+                                <rect key="frame" x="50" y="328" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="CtJ-A3-Kxv"/>
+                                    <constraint firstAttribute="height" constant="120" id="Tym-bR-pyT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9y-9X-RIy">
+                                <rect key="frame" x="50" y="478" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aD4-il-fu0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Zar At">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aln-eg-k34"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="TuB-5s-Q5z">
+                                <rect key="frame" x="243" y="328" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="8ex-59-mbx"/>
+                                    <constraint firstAttribute="height" constant="120" id="nvI-4D-Ahb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vit-Bb-D1f" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AwC-Jg-Zh8"/>
+                            <constraint firstItem="e9y-9X-RIy" firstAttribute="top" secondItem="b7S-wq-maX" secondAttribute="bottom" constant="200" id="KlP-pL-Qif"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e9y-9X-RIy" secondAttribute="trailing" constant="50" id="N5n-5t-kFA"/>
+                            <constraint firstItem="Vit-Bb-D1f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="P14-tc-0ar"/>
+                            <constraint firstItem="SHT-zr-w5S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Qeq-3o-hJW"/>
+                            <constraint firstItem="e9y-9X-RIy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Vmk-ce-7eX"/>
+                            <constraint firstItem="TuB-5s-Q5z" firstAttribute="top" secondItem="b7S-wq-maX" secondAttribute="bottom" constant="50" id="YQu-NM-pnv"/>
+                            <constraint firstItem="b7S-wq-maX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a35-v2-tWc"/>
+                            <constraint firstItem="SHT-zr-w5S" firstAttribute="top" secondItem="b7S-wq-maX" secondAttribute="bottom" constant="50" id="gd3-cj-Rv7"/>
+                            <constraint firstItem="Vit-Bb-D1f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kkS-FH-Jts"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TuB-5s-Q5z" secondAttribute="trailing" constant="50" id="w0E-dX-FOe"/>
+                            <constraint firstItem="b7S-wq-maX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="x1s-VC-HHq"/>
+                            <constraint firstItem="Vit-Bb-D1f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zQD-fV-IJ6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="left" destination="SHT-zr-w5S" id="6n1-ia-Hiv"/>
+                        <outlet property="right" destination="TuB-5s-Q5z" id="j8a-Du-dbw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.623188405797109" y="-34.151785714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dice1" width="256" height="256"/>
+        <image name="diceeLogo" width="588" height="384"/>
+        <image name="newbackground" width="667" height="622"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
